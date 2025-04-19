@@ -3,49 +3,49 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: url("c:\Users\student\Downloads\Your reminder to perfect health care.png") 
-    no-repeat center center fixed;
+    background: url("/assets/about_us_image.png") no-repeat center center fixed;
     background-size: cover;
     color: #fff;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
   }
   
-  /* Add a dark overlay for readability */
+  /* Add a semi-transparent dark overlay for contrast */
   .overlay {
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: brightness(0.6);
     min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+  
+  /* Glassy frame */
+  .glass-frame {
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
   }
   
   /* Header styling */
-  header {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  .logo {
-    max-width: 150px;
-    display: block;
-    margin: 0 auto 10px auto;
-  }
-  
   h1 {
-    font-size: 36px;
-    margin: 0;
+    font-size: 42px;
+    margin-bottom: 30px;
+    text-align: center;
     color: #00ffff;
+    font-weight: bold;
   }
   
-  /* Paragraph styling */
-  .content {
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.8;
+  /* Paragraph text styling */
+  .glass-frame p {
     font-size: 18px;
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-    backdrop-filter: blur(5px);
+    line-height: 1.8;
+    text-align: justify;
+    color: #f0f0f0;
+    margin-bottom: 20px;
   }
   
